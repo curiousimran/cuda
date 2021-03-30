@@ -1,0 +1,466 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;  /* means 10px */
+    
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+.wrapper{
+    overflow: hidden;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ========================================
+    Common Css
+========================================== */
+a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.6rem;
+}
+.section-heading{
+    width: 60rem;
+    text-align: center;
+    margin: auto;
+}
+.section-line{
+    width: 8.7rem;
+    height:.4rem;
+    background: #c8d9e5;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.default-btn > a {
+    display: block !important;
+    width: 30rem;
+    height: 7rem;
+    line-height: 7rem;
+    padding: 0 !important;
+    font-size: 1.8rem;
+}
+
+
+
+
+/* ========================================
+    Header Section
+========================================== */
+header{
+    
+    background:linear-gradient(rgba(135,80,156,.9),rgba(135,80,156,.9)),url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.menu-wrap{
+   
+}
+.sticky .menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 101%;
+   background: rgba(135,80,156,.9);
+   box-shadow: 0 .3rem .5rem rgba(255,255,255,.9);
+   z-index: 999;
+}
+.sticky nav{
+    top: 0;
+    left: 0;
+    margin: auto;
+    max-width: 1320px;
+    padding: 1rem 0;
+    z-index: 9999;
+   
+}
+.sticky nav ul,.sticky .header-logo{
+    margin-top: 0;
+}
+
+
+.header-logo{
+    margin-top: 3.5rem;
+    float: left;
+}
+.header-logo img {
+    height: 3.5rem;
+}
+
+nav ul{
+    margin-top: 4rem;
+    float: right;
+}
+nav ul li{
+    margin-left: 1.5rem;
+    display: inline-block;
+}
+nav ul li a{
+    padding: .4rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+nav ul li>a:hover{
+  background: #643a79;
+  color: #fff;
+}
+nav ul li.active a{
+  background: #643a79;
+  color: #fff;
+}
+
+.header-content{
+    padding-top: 16rem;
+    padding-bottom: 14rem;
+}
+.header-content h1{
+    padding-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4.3rem;
+    color: #fff;
+}
+.header-content #header-btn{
+    background: #eb7d4b;
+}
+.mobile-menu-btn{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.mobile-menu{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* ========================================
+    Service Section
+========================================== */
+.service-section{
+    background: linear-gradient(rgba(23,194,164,.9),rgba(23,194,164,.9)),url(../img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+}
+#service-title{
+    color: #fff;
+}
+#service-subtitle {
+    color: #fff;
+    margin-bottom: 50px;
+}
+.service-content{}
+.service-content h3{
+    color: #fff;
+}
+.service-content p{
+    color: #fff;
+}
+/* ========================================
+    Team Section
+========================================== */
+.team-section{
+    background: linear-gradient(rgba(231,241,248,.9),rgba(231,241,248,.9)),url(../img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+}
+.team-section #team-title{
+
+}
+.team-section #team-subtitle{
+
+}
+.team-content{}
+.team-content img{
+    border-radius: 50%;
+    max-width: 60%;
+    height: auto;
+}
+.team-content span{
+    font-size: 1.6rem;
+    color: #30bae7;
+}
+.team-social {
+    margin-top: 3rem;
+}
+
+.team-social li a{
+    background: #bdd1df;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin-left: .7rem;
+    margin-right: .7rem;
+    transition: .4s;
+}
+.team-social li a:hover{
+    color: #bdd1df;
+    background: #fff;
+    transform: rotate(360deg);
+
+}
+.team-social li a i{}
+
+/* ========================================
+    Skill Section
+========================================== */
+
+.skill-section{
+    background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),url(../img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+        /*  Animated Circle start */
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+  }
+  .web-design{
+    stroke: #30bae7;
+  }
+  .html-css{
+    stroke: #d74680;
+  }
+  .graphic-design{
+    stroke: #15c7a8;
+  }
+  .ui-ux{
+    stroke: #eb7d4b;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.25; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: #111;
+    text-anchor: middle;
+    stroke: #111;
+  }
+          /*  Animated Circle end */
+
+/* ========================================
+    Portfolio Section
+========================================== */
+.portfolio-section{
+    background: linear-gradient(rgba(255,221,153,.9),rgba(255,221,153,.9)),url(../img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.portfolio-tabs button{
+    border-radius: 5px;
+    padding: 10px 18px;
+    background: #ebc985;
+    color: #111;
+    border: none;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+.portfolio-tabs button:hover{
+    box-shadow: inset 0 .3rem .5rem rgba(60,71,97,.5);
+}
+.portfolio-tabs button:active{
+    background: #fff;
+}
+.portfolio-item-each {
+    margin-bottom: 5rem;
+}
+.portfolio-item-each h3{
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.portfolio-tabs .mixitup-control-active{
+   background: #fff; 
+}
+
+/* ========================================
+   Testimonial Section
+========================================== */
+.testimonial-section{
+    background: linear-gradient(rgba(215,70,128,.9),rgba(215,70,128,.9)),url(../img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.client-detail{
+    margin-top: 50px;
+}
+.client{
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}
+.client img{
+    max-width: 80%;
+}
+.client .client-comment{
+    padding-right: 9.5rem;
+    font-style: italic;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    color: #fff;
+}
+.client h3{
+    color: #fff;
+}
+.client span{
+    color: #fd9;
+    margin-top: 0.5rem;
+}
+
+/* ========================================
+   Contact  Section
+========================================== */
+.contact-section{
+    background: linear-gradient(rgba(60,84,153,.9),rgba(60,84,153,.9)),url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+
+form .input,textarea{
+    width: 100%;
+   margin-bottom: 20px; 
+   height: 50px;
+   background: #273A71 !important;
+   border: none  !important;
+   border-radius: 5px;
+   padding: 20px;
+
+}
+form textarea{
+    height: 300px;
+}
+form input::placeholder,textarea::placeholder{
+    font-size: 1.8rem;
+    padding: 20px;
+    color: #fff;
+    margin-left: 20px;
+    border: none  !important;
+}
+form input:focus{
+    outline: none  !important;
+}
+form textarea:focus{
+    outline: none  !important;
+}
+
+.btn-submit{
+    font-size: 1.6rem;
+    background: #30bae7;
+    padding: 1.5rem 6rem;
+    margin-top: 3.5rem;
+    color: #fff;
+    border-bottom: .3rem solid #299ec5;
+}
+.btn-submit:hover{
+    color: #fff;
+}
+
+#contact-service-title,#contact-service-subtitle{
+    color: #fff;
+}
+
+/* ========================================
+   Footer Section
+========================================== */
+footer{
+    background: #344B8E;
+}
+
+footer ul{
+    display: inline-block;
+    text-align: center;
+}
+footer ul li{
+    padding: 24px;
+
+}
+footer ul li a{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+/* Scroll Button */
+
+#scrolltop {
+    position: fixed;
+    right: 8px;
+    bottom: 13px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn button:focus {
+    outline: none !important;
+    } 
+
